@@ -1,0 +1,249 @@
+html, body {
+    margin: 0;
+    background: #252730;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    background: #191B21;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 36px;
+}
+
+label input {
+    background: #252730 url("asset/search.png") no-repeat 6px center;
+    background-size: 20px;
+    border: solid 2px #252730;
+    border-radius: 14px;
+    outline: 0;
+    color: #FFFFFF;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 8px 20px 8px 32px;
+    width: 16vw;
+    margin: 0 22vw;
+}
+
+#content {
+    margin: 0 20vw;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    background: #191B21;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 24px 32px;
+}
+
+.container.left {
+    flex: 65%;
+    text-align: left;
+    padding: 24px 32px;
+}
+
+.container.right {
+    flex: 35%;
+    text-align: left;
+    padding: 24px 32px;
+}
+
+.left {
+    flex: 30%;
+    text-align: center;
+    margin-top: 7px;
+    padding-left: 14vw;
+}
+
+.center {
+    flex: 30%;
+    text-align: center;
+}
+
+.right {
+    flex: 30%;
+    text-align: center;
+    margin-top: 7px;
+    padding-right: 14vw;
+}
+
+#location, #location-more {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#time, #time-more, #date {
+    font-weight: 300;
+    font-size: 12px;
+    color: #8D8D8D;
+}
+
+#temperature {
+    font-weight: 700;
+    font-size: 82px;
+}
+
+#summary {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+#chance-of-rain {
+    font-weight: 300;
+    font-size: 18px;
+    color: #8D8D8D;
+}
+
+#icon {
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding: 90px 10px 0 10px;
+    transition: .3s ease-in-out;
+}
+
+#high-low {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.icon {
+    margin-top: 30px;
+    width: 250px;
+    height: 120px;
+}
+
+#sunrise {
+    float: left;
+    margin-left: 2.3vw;
+}
+
+#sunset {
+    float: right;
+    margin-right: 2.3vw;
+}
+
+#weather-today-more {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#feels-like {
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 12px;
+}
+
+#humidity {
+    background: url("asset/humidity.png") no-repeat left center;
+    background-size: 24px;
+    padding: 6px 6px 6px 48px;
+}
+
+#dew-point {
+    background: url("asset/dew-point.png") no-repeat left center;
+    background-size: 24px;
+    padding: 6px 6px 6px 48px;
+}
+
+#pressure {
+    background: url("asset/pressure.png") no-repeat left center;
+    background-size: 24px;
+    padding: 6px 6px 6px 48px;
+}
+
+#visibility {
+    background: url("asset/visibility.png") no-repeat left center;
+    background-size: 24px;
+    padding: 6px 6px 6px 48px;
+}
+
+#ozone {
+    background: url("asset/ozone.png") no-repeat left center;
+    background-size: 24px;
+    padding: 6px 6px 6px 48px;
+}
+
+.hidden {
+    display: none;
+}
+
+.separator {
+    height: 1px;
+    background: #8D8D8D;
+    margin: 10px 0;
+}
+
+#loading {
+    text-align: center;
+    margin-top: 22.5%;
+}
+
+.loading {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+    border: 4px solid #FFFFFF;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    #icon {
+        background-size: 0;
+    }
+}
+
+@media (max-width: 1840px) {
+    #sunrise {
+        float: left;
+        margin-left: 1.8vw;
+    }
+
+    #sunset {
+        float: right;
+        margin-right: 1.8vw;
+    }
+}
+
+@media (max-width: 1650px) {
+    #sunrise {
+        float: left;
+        margin-left: 1.8vw;
+    }
+
+    #sunset {
+        float: right;
+        margin-right: 1.8vw;
+    }
+}
+
+@media (max-width: 1280px) {
+    #sunrise {
+        float: left;
+        margin-left: .6vw;
+    }
+
+    #sunset {
+        float: right;
+        margin-right: .6vw;
+    }
+}
+

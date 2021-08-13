@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <title>Weather</title>
+    <meta charset="UTF-8">
+
+    <link type="text/css" href="style.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="weather.js"></script>
+</head>
+<body onload="init()" ondragstart="return false;">
+<nav>
+    <div class="row">
+        <div class="left">
+            <a>Weather</a>
+        </div>
+        <div class="center">
+            <label>
+                <input type="text" placeholder="Enter a city or town">
+            </label>
+        </div>
+        <div class="right">
+            <a id="nav-location">None</a>
+        </div>
+    </div>
+</nav>
+<div>
+    <div id="loading">
+        <a class="loading"></a>
+    </div>
+
+    <div id="content" class="hidden">
+        <div class="row">
+            <div id="weather-today" class="container left">
+                <div style="width: 65%; float: left;">
+                    <a id="location"></a>
+                    <div style="height: 6px;"></div>
+                    <a id="time"></a>
+                    <div style="height: 6px;"></div>
+                    <a id="temperature"></a>
+                    <div style="height: 6px;"></div>
+                    <a id="summary"></a><br>
+                    <div style="height: 2px;"></div>
+                    <a id="chance-of-rain"></a><br>
+                </div>
+
+                <div style="width: 35%; float: right; text-align: right; margin-top: 125px;">
+                    <a id="icon" style="background-image: url('asset/rain.png');">
+                        <span id="high-low"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container right">
+                <a style="font-weight: 500; font-size: 16px;">Daylight Hours</a>
+                <div style="height: 6px;"></div>
+                <a id="date"></a>
+                <div style="text-align: center">
+                    <a>
+                        <img class="icon" src="asset/half-sun.png" alt=""/><br>
+                        <span id="sunrise"></span>
+                        <span id="sunset"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="weather-today-more" class="container left">
+                <div style="width: 60%; float: left;">
+                    <a id="location-more"></a>
+                    <div style="height: 6px;"></div>
+                    <a id="time-more"></a>
+                    <div style="height: 16px;"></div>
+                    <a>
+                        <span id="feels-like"></span><br>
+                        <span style="font-weight: 300; font-size: 14px">Feels Like</span>
+                    </a>
+
+                    <br><br>
+
+                    <a id="humidity"></a>
+                    <div class="separator"></div>
+                    <a id="dew-point"></a>
+                    <div class="separator"></div>
+                    <a id="pressure"></a>
+                    <div class="separator"></div>
+                    <a id="visibility"></a>
+                    <div class="separator"></div>
+                    <a id="ozone"></a>
+                </div>
+
+                <div style="width: 40%; float: right; margin-top: 118px;">
+                    <a id="wind-speed"></a>
+                    <div class="separator"></div>
+                    <a id="wind-gust"></a>
+                    <div class="separator"></div>
+                    <a id="wind-bearing"></a>
+                    <div class="separator"></div>
+                    <a id="uv-index"></a>
+                    <div class="separator"></div>
+                    <a id="moon-phase"></a>
+                </div>
+            </div>
+            <div class="container right" style="background: #252730;">
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
